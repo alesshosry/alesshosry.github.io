@@ -43,7 +43,7 @@
                   "maximumError": "4kb"
                 }
               ],
-              "baseHref": "/alesshosry.github.io/dist/",
+              "baseHref": "/alesshosry.github.io/",
               "outputHashing": "all"
             },
             "development": {
