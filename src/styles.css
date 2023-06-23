@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.page-container-custom {
+    margin-left: 11.2%;
+    margin-right: 11.2%;
+    margin-top: 3%;
+  }
+  
+  @media (max-width: 991px) {
+    /* CSS rules for screens with a width less than 991 pixels */
+    .page-container-custom {
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 2%;
+    }
+  }

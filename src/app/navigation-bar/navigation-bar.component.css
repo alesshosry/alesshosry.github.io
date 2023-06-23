@@ -1,0 +1,33 @@
+/*  .toolbar-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  } 
+
+  .toolbar-container mat-toolbar {
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: darkblue;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .toolbar-container {
+      flex-direction: column;
+      align-items: flex-start; 
+    }
+  } */
+
+
+  .nav-bar-custom {
+    margin-left: 10%;
+    margin-right: 10%;  
+  }
+
+  @media (max-width: 991px) {
+    /* CSS rules for screens with a width less than 991 pixels */
+    .nav-bar-custom {
+      margin-left: 0%;
+      margin-right: 0%;  
+    }
+  }
