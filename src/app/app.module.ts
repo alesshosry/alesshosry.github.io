@@ -14,7 +14,10 @@ import { HomeComponent } from './home/home.component';
 import { TeachingComponent } from './teaching/teaching.component';
 import { PublicationsComponent } from './publications/publications.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { ContactMeComponent } from './contact-me/contact-me.component';
+import { ContactMeComponent } from './contact-me/contact-me.component'; 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
+ 
 
 @NgModule({
   declarations: [
@@ -31,7 +34,8 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

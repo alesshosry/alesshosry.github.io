@@ -20,9 +20,21 @@
 
 
   .nav-bar-custom {
-    margin-left: 10%;
-    margin-right: 10%;  
+    margin-left: 20%;
+    margin-right: 20%;  
   }
+
+  .bg-body-custom {
+    background-color: #003b47;
+  }
+ 
+
+  .social-media-icon-custom {
+    font-size: 2em;
+    margin-right:10px;
+    color:white;
+  }
+
 
   @media (max-width: 991px) {
     /* CSS rules for screens with a width less than 991 pixels */
@@ -30,4 +42,11 @@
       margin-left: 0%;
       margin-right: 0%;  
     }
+
+    .social-media-icon-custom {
+      font-size: 1.5em; 
+    }
+
   }
+
+ 

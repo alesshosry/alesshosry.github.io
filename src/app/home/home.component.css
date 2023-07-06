@@ -3,3 +3,46 @@
     justify-content: center;
     align-items: center; 
   }
+
+.description-custom {
+  margin-top: 30px;  
+}
+.title-custom{
+  margin-top: 25px;  
+}
+
+.bottom-paragraph-custom{
+  margin-top: 40px;
+}
+ 
+.padding-text-custom { 
+  padding-left: 2%; 
+}
+
+img {
+  border: 1px solid #7d5d5d24;
+}
+ 
+ul {
+  padding-left: 1em;
+} 
+
+
+
+@media (max-width: 991px) {
+  /* CSS rules for screens with a width less than 991 pixels */
+  .description-custom {
+    margin-top: 15px;  
+  }
+  .title-custom{
+    margin-top: 15px;  
+  }
+  .bottom-paragraph-custom{
+    margin-top: 20px;
+  }
+  
+  
+}
+
+
+
