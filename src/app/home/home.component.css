@@ -27,7 +27,13 @@ ul {
   padding-left: 1em;
 } 
 
+.description-bio-custom {
+  font-size: 16px;
+}
 
+.rounded-circle {
+  width:200px;
+}
 
 @media (max-width: 991px) {
   /* CSS rules for screens with a width less than 991 pixels */
@@ -41,6 +47,13 @@ ul {
     margin-top: 20px;
   }
   
+  .description-bio-custom {
+    font-size: 13px;
+  }
+
+  .rounded-circle {
+    width:150px;
+  }
   
 }
 
