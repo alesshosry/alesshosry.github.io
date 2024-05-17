@@ -24,6 +24,10 @@
     margin-right: 20%;  
   }
 
+  .d-flex-custom { 
+    margin-left: 20%;
+  }
+
   .bg-body-custom {
     background-color: #0b4d45;
   }
@@ -41,6 +45,9 @@
     .nav-bar-custom {
       margin-left: 0%;
       margin-right: 0%;  
+    }
+    .d-flex-custom {
+      margin-left: 0%;
     }
 
     .social-media-icon-custom {
