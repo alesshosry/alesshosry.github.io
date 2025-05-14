@@ -1,0 +1,2 @@
+ng build --configuration production --base-href "https://alesshosry.github.io/alesshosry.github.io/"
+npx angular-cli-ghpages --dir=dist/alesshosry.github.io

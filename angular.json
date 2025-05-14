@@ -48,6 +48,7 @@
                   "maximumError": "4kb"
                 }
               ],
+              "outputPath": "dist/alesshosry.github.io",
               "baseHref": "/alesshosry.github.io/",
               "outputHashing": "all"
             },
@@ -98,6 +99,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "options": {
+            "message": "gh-pages update",
+            "branch": "gh-pages",
+            "post-build": "echo > dist/alesshosry.github.io/.nojekyll"
+          },
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
