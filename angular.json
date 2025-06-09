@@ -102,6 +102,7 @@
         },
         "deploy": {
           "options": {
+            "baseHref": "/alesshosry.github.io/",
             "message": "gh-pages update",
             "branch": "gh-pages",
             "post-build": "echo > dist/alesshosry.github.io/.nojekyll"
