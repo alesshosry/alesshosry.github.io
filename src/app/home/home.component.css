@@ -35,6 +35,10 @@ ul {
   width:200px;
 }
 
+.paragraph-intro{
+  margin-bottom: 10px;
+}
+
 @media (max-width: 991px) {
   /* CSS rules for screens with a width less than 991 pixels */
   .description-custom {
