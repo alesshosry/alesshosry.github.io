@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-teaching',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./teaching.component.css']
 })
 export class TeachingComponent {
-
+  faQuoteLeft = faQuoteLeft;
 }
