@@ -1,2 +1,5 @@
-ng build --configuration production --base-href "https://alesshosry.github.io/alesshosry.github.io/"
+ng build --configuration production --base-href "https://alesshosry.github.io"
+git add .
+git commit -m 'rebuilding'
+git push origin main
 npx angular-cli-ghpages --dir=dist/alesshosry.github.io
