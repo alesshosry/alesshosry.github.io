@@ -1,7 +1,9 @@
 .card {
-    background-color:white ;
+    background-color: white;
+    margin-bottom: 15px;
 }
 
-.card-subtitle, .card-actions {
+.card-subtitle,
+.card-actions {
     color: gray;
 }

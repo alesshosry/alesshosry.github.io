@@ -1,138 +1,52 @@
-<div class="page-container-custom" >
-  
-  <!-- <div>
-    <div class="d-flex align-items-center">
-      <div>
-        <img src="../assets/myImage1.jpeg" class="rounded-circle ">
-      </div> 
-      <div class = "padding-text-custom">
-        <blockquote class="blockquote border-0 p-0">
-          <p class="font-italic lead">  <fa-icon [icon]="faQuoteLeft" class=""></fa-icon>  Curiosity and a positive attitude can take you places! </p>
-         <footer class="blockquote-footer">Someone famous in
-              <cite title="Source Title">Source Title</cite>
-          </footer> 
+<div class="page-container-custom">
+  <div class="description-custom row">
+
+    <div class="col-lg-3 ">
+      <img src="../assets/myImage2.jpeg" class="rounded-circle ">
+    </div>
+
+    <div class="col-lg-9 title-custom d-flex ">
+      <blockquote class="blockquote border-0 p-0">
+        <p class="lead "> <i> <fa-icon [icon]="faQuoteLeft" class=""></fa-icon> {{ content?.quote }} </i></p>
+        <p class="description-bio-custom" [innerHTML]="content?.bio"></p>
       </blockquote>
+    </div>
+
+    <div class="col-lg-3 title-custom">
+      <h1>
+        Experience
+      </h1>
+    </div>
+
+    <div class="col-lg-9 title-custom">
+      <div class="paragraph-intro">
+        {{ content?.experienceIntro }}
       </div>
-      
-    </div>
-  </div> -->
-  
-<div class="description-custom row">
- 
-
-  <div class="col-lg-3 ">
-    <img src="../assets/myImage2.jpeg" class="rounded-circle ">
-  </div> 
-  <div  class="col-lg-9 title-custom d-flex ">
-    <blockquote class="blockquote border-0 p-0">
-      <p class="lead "> <i> <fa-icon [icon]="faQuoteLeft" class=""></fa-icon> Curiosity and a positive attitude can take you places! </i></p>
-      <p class="description-bio-custom">
-        Hello and welcome. I’m <b>Aless HOSRY</b>, a research engineer specialised in software analysis. 
-        I invite you to browse through my website to learn more about my professional journey, explore my portfolio, and connect with me on social media.
-        Let’s connect and collaborate to create something meaningful.
-      </p>
-      <!-- I am a PhD candidate at the <a href="https://www.univ-lille.fr" target="_blank">University of Lille in France</a>.  -->
-      <!-- This exciting venture allows me to combine my passion for teaching. 
-      I'm constantly seeking new challenges and opportunities to make a positive impact for my students. -->
-
-      <!-- <footer class="blockquote-footer">Someone famous in
-          <cite title="Source Title">Source Title</cite>
-      </footer> -->
-  </blockquote>
-  </div>
-
-  <!-- <div class="col-lg-3 title-custom">
-    <h1 >
-      Who am I ?
-    </h1>
-  </div>
-  <div   class="col-lg-9 title-custom">
-    Hey there! I'm Aless Hosry, an ambitious person that loves learning and exploring new things.  
-    I am a PhD candidate at the <a href="https://www.univ-lille.fr" target="_blank">University of Lille in France</a>. 
-    This exciting venture allows me to combine my passion for teaching. 
-    I'm constantly seeking new challenges and opportunities to make a positive impact for my students.
-  </div>  -->
-
-  <div class="col-lg-3 title-custom">
-    <h1>
-      Education journey 
-    </h1> 
-  </div>
-  <div class="col-lg-9 title-custom">
-    <div class="paragraph-intro"> 
-        My academic journey in computer science spans a range of degrees, each building a solid foundation in the field and shaping my expertise in software engineering:  
-    </div>
-    <ul>
-        <li>
-            <b>PhD in Computer Science (2021 - 2024):</b>  
-            I completed my PhD in Computer Science, specializing in External Dependencies, as part of the <a href="https://www.inria.fr/en/evref" target="_blank">EVREF team</a> at <a href="https://www.inria.fr/en/inria-centre-university-lille" target="_blank">INRIA Lille</a>.  
-            My research focused on detecting and analyzing external dependencies in heterogeneous software systems, resulting in several published papers and presentations at international conferences.  
-            This experience enhanced my technical expertise and reinforced my ability to independently tackle complex research challenges.  
+      <ul>
+        <li *ngFor="let exp of content?.experience">
+          <b>{{ exp.title }}</b>
+          <div [innerHTML]="exp.description"></div>
         </li>
-        <li>
-            <b>Engineering Degree (2019):</b>  
-            Building upon my bachelor's education, I pursued and obtained my Engineering degree in Computer Science from <a href="https://www.cnam-liban.fr" target="_blank">CNAM Lebanon</a>.  
-            This advanced program deepened my knowledge in areas such as algorithms, software engineering, and database management, providing a strong technical foundation for my research career.  
+      </ul>
+    </div>
+
+    <div class="col-lg-3 title-custom">
+      <h1>
+        Education journey
+      </h1>
+    </div>
+
+    <div class="col-lg-9 title-custom">
+      <div class="paragraph-intro">
+        {{ content?.educationIntro }}
+      </div>
+      <ul>
+        <li *ngFor="let edu of content?.education">
+          <b>{{ edu.title }}</b>
+          <div [innerHTML]="edu.description"></div>
         </li>
-        <li>
-            <b>Bachelor's Degree (2016):</b>  
-            I completed my Bachelor's degree in Computer Science from <a href="https://www.cnam-liban.fr" target="_blank">CNAM Lebanon</a>.  
-            This foundational program provided me with a comprehensive understanding of core computer science concepts, setting the stage for my further studies and professional growth.  
-        </li> 
-    </ul>  
-</div>
+      </ul>
+    </div>
 
-
-  <div class="col-lg-3 title-custom">
-    <h1 >
-      Experience
-    </h1>
   </div>
-  <div class="col-lg-9 title-custom">  
-    <div class="paragraph-intro"> 
-    Over the years, I've had the opportunity to gain practical experience in various professional settings. 
-    From internships to full-time positions, I have worked with diverse teams, tackling real-world problems and building my skills.
-    These experiences have sharpened my abilities and taught me the value of collaboration and adaptability:
-  </div>
-    <ul>
-      <li>
-        <b>Fullstack Engineer (2016–2021):</b><br>
-        I worked in industry as a software engineer, staying current with evolving practices in software architecture and development.
-        I mastered technologies such as 
-        <a href="https://angular.io/" target="_blank" rel="noopener noreferrer">Angular</a>, 
-        <a href="https://www.oracle.com/database/technologies/appdev/sql.html" target="_blank" rel="noopener noreferrer">Oracle SQL</a>, 
-        <a href="https://dotnet.microsoft.com/en-us/apps/aspnet/core" target="_blank" rel="noopener noreferrer">.NET Core</a>, 
-        and 
-        <a href="https://restfulapi.net/" target="_blank" rel="noopener noreferrer">RESTful APIs</a>, among others.
-      </li>
-      <li>
-        <b>PhD Candidate (2021–2024):</b><br>
-        During my PhD, I focused on academic research in software analysis. I created innovative libraries like 
-        <a href="https://github.com/alesshosry/adonis" target="_blank" rel="noopener noreferrer">Adonis</a> and 
-        <a href="https://github.com/moosetechnology/motion" target="_blank" rel="noopener noreferrer">MoTion</a>, developed in 
-        <a href="https://pharo.org/" target="_blank" rel="noopener noreferrer">Pharo</a>, an object-oriented programming language.
-        I also collaborated with industry to analyze large-scale projects and detect external dependencies across diverse technologies.
-      </li>
-      <li>
-        <b>Research Engineer (2025–Present):</b><br>
-        I currently work as a research engineer at <a href="https://www.berger-levrault.com/en/" target="_blank" rel="noopener noreferrer">Berger-Levrault</a>, specializing in software analysis.
-        My role allows me to merge academic insights with engineering practices: I design innovative solutions grounded in research, and I implement them using tools like 
-        <a href="https://www.moosetechnology.org/" target="_blank" rel="noopener noreferrer">Moose</a> for software exploration, 
-        <a href="https://github.com/alesshosry/motion" target="_blank" rel="noopener noreferrer">MoTion</a> for object-oriented pattern matching, and 
-        <a href="https://github.com/moosetechnology/adonis" target="_blank" rel="noopener noreferrer">Adonis</a> to analyze multi-language software systems.<br>
-        And no, I don't do AI!<br>
-        There are many challenges ahead, but I’m ready to take them on, one by one.
-      </li>
-    </ul>
-  </div>
-</div>
-
-<!-- <div class="bottom-paragraph-custom">
-  Feel free to browse through my website to learn more about my professional journey, explore my portfolio, and connect with me on social media. Let's embark on this exciting journey together and create something meaningful.
-  <br> 
-  <br>
-  <br>
-  <h4>Aless Hosry</h4> 
-  
-  </div> -->
 </div>

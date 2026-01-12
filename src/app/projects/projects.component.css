@@ -1,0 +1,126 @@
+.projects-grid {
+  display: grid;
+  /* force 2 cards per row on larger screens */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  /* fixed row height so cards stay visually identical */
+  grid-auto-rows: 320px;
+  align-items: stretch;
+  width: 100%;
+}
+
+.project-card {
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  /* make card a column-flex so actions stay at bottom */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  /* prevent content from breaking the card */
+}
+
+/* Desktop fixed height, but revert to auto on narrower screens */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    height: auto;
+  }
+
+  .project-card mat-card-content p {
+    -webkit-line-clamp: 6;
+    /* slightly more lines on narrow screens */
+  }
+}
+
+.project-card mat-card-content p {
+  /* allow content to grow and truncate visually if too long */
+  flex: 1 1 auto;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  /* show max ~6 lines */
+  -webkit-box-orient: vertical;
+}
+
+.project-card mat-card-actions {
+  margin-top: auto;
+}
+
+.project-card mat-card-title {
+  font-size: 1.05rem;
+}
+
+.company-section {
+  margin-bottom: 32px;
+}
+
+.company-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 12px 0 20px 0;
+}
+
+/* Company title design */
+.company-name {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  position: relative;
+  padding-left: 14px;
+  color: #07393a;
+  /* dark teal */
+}
+
+/* colored accent bar to the left */
+.company-name::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 64%;
+  width: 6px;
+  background: linear-gradient(180deg, #0b8b80, #065a58);
+  border-radius: 3px;
+}
+
+/* small badge for project count (alternative to .company-meta) */
+.company-badge {
+  background: #f0f8f7;
+  color: #065a58;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  border: 1px solid rgba(6, 90, 88, 0.08);
+}
+
+.company-meta {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  .company-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-grid {
+    gap: 12px;
+  }
+
+  .project-card {
+    max-width: none;
+  }
+}

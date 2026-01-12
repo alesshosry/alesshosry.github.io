@@ -9,6 +9,14 @@ import { Component } from '@angular/core';
 export class PublicationsComponent {
   publications = [
     {
+      title: "FASTTypeScript Metamodel Generation Using FAST Traits and Tree-Sitter Project",
+      conference: "International Workshop on Smalltalk Technologies (IWST)",
+      year: "2025",
+      place: "Gdansk, Poland",
+      description: "The TypeScript programming language is a popular language when building web applications all around the world. However, analyzing applications developed in TypeScript is challenging because of the lack of modern analysis platforms dealing with this programming language. Moose is an existing platform developed in Pharo that aims to ease the analysis of programming language by using pre-existing composable traits leading to usable generic tools. However, building a new metamodel for a new programming language is still challenging. When considering the support of the TypeScript language, one needs (1) a parser to parse the TypeScript source code, along with (2) a metamodel capable of efficiently representing the Abstract Syntax Tree (AST) of the language. However, building these tools from scratch is a particularly costly task in terms of effort, time, and required knowledge. To ease the task of supporting a new programming language, we introduce a new approach leveraging the existing well-maintained parser Tree-Sitter. In this paper, we detail how we use it to build a first version of FASTTypeScript, a metamodel for TypeScript AST working in Moose. The project was completed within weeks, and initial results demonstrate that our method is effective and promising for application to other programming languages.",
+      link: "https://ceur-ws.org/Vol-4139/Paper06.pdf"
+    },
+    {
       title: "MoTion: A new declarative object matching approach in Pharo",
       conference: "Journal of Computer Languages",
       year: "2024",
