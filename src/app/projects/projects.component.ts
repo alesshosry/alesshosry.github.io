@@ -9,22 +9,44 @@ export class ProjectsComponent {
   // grouped by company for clearer layout
   companies = [
     {
-      name: 'Bankers Assurance SAL',
+      name: 'Berger-Levrault - Starting 2025',
+      description: 'At Berger-Levrault, I work as a Research Software Engineer in LabGL(Lab Génie Logiciel) team, which is part of DRIT (Direction de Recherche et de l\'Innovation Technologique). Our work primarily relies on Moose, an open-source platform for software analysis developed in Pharo Smalltalk. Moose is designed as a flexible environment where users can import software models and leverage features such as visualizations and queries to ease the analysis process. Moose is the result of decades of research, shaped by contributions from multiple theses and numerous publications in international journals and conferences. It has established itself as a trustworthy platform, renowned for its reliability and widely adopted by companies that value research and seek to implement advanced software analysis solutions such as Berger-Levrault. During my time at this company, I have created and contributed to numerous projects, many of which are open source. I also had the opportunity to supervise master’s students (in their 4th and 5th years) during internships lasting between 4 and 6 months, in collaboration with several French universities. Additionally, I have contributed, published research papers, and participated in European and international conferences, where I received some awards. Below is a list of the projects I have contributed to at Berger-Levrault:',
       projects: [
         {
-          title: 'Websites',
-          description: "Complaints, Medical Insurance, Motor insurance, Quotation",
-          link: ''
+          title: 'Berger-Levrault LSP',
+          description: "This project involved the creation of a custom Language Server Protocol (LSP) tailored specifically for Berger-Levrault. The company pursued this initiative for two primary reasons: To align with the architecture of its projects and to encourage developers to adhere to company coding standards in programming. The LSP was implemented as a server using Pharo, with extension projects developed for popular IDEs like VSCode and IntelliJ using TypeScript. These extensions support TypeScript and Java projects, though they are currently hosted in private repositories. The project was showcased at DevFest Toulouse, an event attended by nearly 1,000 developers. It was also presented to an audience of over 150 developers, who expressed strong interest in the solution.",
+          link: 'https://devfesttoulouse.fr/conferences/un-back-end-metier-pour-mon-ide/'
         },
         {
-          title: 'Mobile application webservices',
-          description: "",
-          link: ''
+          title: 'Pharo-Tree-Sitter',
+          description: "Our goal is to generate metamodels that represent the Abstract Syntax Tree (AST) of programming languages. In our community, we refer to these as FAST metamodels, the equivalent of Famix AST. Famix is a metamodel that abstracts software elements such as classes, packages, methods, and invocations. To expand our ability to generate FAST metamodels and cover more programming languages, we developed Pharo-Tree-Sitter. This tool leverages Tree-Sitter, enabling us to broaden our research in software analysis. We selected Tree-Sitter for several reasons, some of them are based on research: Its capability for incremental parsing (based on the work of Wagner et al. in 1998), its development and maintenance by GitHub, its support for a wide range of programming languages, etc... ",
+          link: 'https://github.com/Evref-BL/Pharo-Tree-Sitter'
+        },
+        {
+          title: 'FASTTypescript',
+          description: "FASTTypeScript is an example of a FAST metamodel generated using Pharo-Tree-Sitter. It’s important to note that the first version of FASTTypeScript was automatically generated in just a few minutes using Pharo-Tree-Sitter and a script of fewer than 20 lines of code. This approach saved weeks of manual work and significantly reduced effort. Afterward, the metamodel was manually refined, and tests were added to align with the standards of the Moose community. Today, FASTTypeScript is actively used in multiple projects at Berger-Levrault, enabling the analysis of TypeScript-based software. In 2025, I was awarded second prize for innovative ideas in a European Conference for a paper that I published talking about the associated research work. This recognition highlights the impact and originality of the contributions presented in the paper.",
+          link: 'https://github.com/moosetechnology/FASTTypescript'
+        },
+        {
+          title: 'Carrefour-TypeScript',
+          description: "This is the repo of the bridge between FamixTypeScript and FASTTypeScript",
+          link: 'https://github.com/moosetechnology/Carrefour-TypeScript'
+        },
+        {
+          title: 'FamixTypeScriptModelUpdater',
+          description: "This project is similar to FamixJavaModelUpdater but for TypeScript. The main task of it is to update Famix and FAST models following live modifications.",
+          link: 'https://github.com/Evref-BL/FamixTypeScriptModelUpdater'
+        },
+        {
+          title: 'FASTTypescript',
+          description: "FASTXML is a recently created project that integrates with Moose and leverages the Tree-Sitter parser to analyze XML source code in Pharo.",
+          link: 'https://github.com/Evref-BL/FASTXML'
         }
       ]
     },
     {
-      name: 'INRIA',
+      name: 'INRIA - Between 2021 and 2024',
+      description: '',
       projects: [
         {
           title: 'MoTion',
@@ -39,25 +61,16 @@ export class ProjectsComponent {
       ]
     },
     {
-      name: 'Berger-Levrault',
+      name: 'Bankers Assurance SAL - Between 2016 and 2021',
+      description: '',
       projects: [
         {
-          title: 'Pharo-Tree-Sitter',
-          description: "I contributed to this project at Berger-Levrault. It helps generating FAST metamodels using Tree-Sitter to cover more programming languages.",
-          link: 'https://github.com/Evref-BL/Pharo-Tree-Sitter'
-        },
-        {
-          title: 'FASTTypescript',
-          description: "FASTTypescript generates TypeScript AST metamodels.",
-          link: 'https://github.com/moosetechnology/FASTTypescript'
-        },
-        {
-          title: 'Carrefour-TypeScript',
-          description: "",
+          title: 'Websites',
+          description: "Complaints, Medical Insurance, Motor insurance, Quotation",
           link: ''
         },
         {
-          title: 'FamixTypeScriptModelUpdater',
+          title: 'Mobile application webservices',
           description: "",
           link: ''
         }
