@@ -1,52 +1,34 @@
-<div class="page-container-custom">
-  <div class="description-custom row">
+<section class="home-page container" aria-label="Home">
+  <aside class="sidebar" role="complementary" aria-label="Profile summary">
+    <img src="../assets/myImage2.jpeg" alt="Profile photo" class="avatar" loading="lazy">
+    <h2 class="name">Aless Hosry, PhD</h2>
+    <p class="role"> Research Software Analysis</p>
 
-    <div class="col-lg-3 ">
-      <img src="../assets/myImage2.jpeg" class="rounded-circle ">
-    </div>
+    <!-- <blockquote class="quote" aria-hidden="false">“{{ content?.quote }}”</blockquote> -->
+    <p class="description-bio-custom" [innerHTML]="content?.bio"></p>
+    <a class="btn btn-download" href="/assets/Curriculum_Vitae_for_Researchers.pdf" download>Download CV</a>
+  </aside>
 
-    <div class="col-lg-9 title-custom d-flex ">
-      <blockquote class="blockquote border-0 p-0">
-        <p class="lead "> <i> <fa-icon [icon]="faQuoteLeft" class=""></fa-icon> {{ content?.quote }} </i></p>
-        <p class="description-bio-custom" [innerHTML]="content?.bio"></p>
-      </blockquote>
-    </div>
-
-    <div class="col-lg-3 title-custom">
-      <h1>
-        Experience
-      </h1>
-    </div>
-
-    <div class="col-lg-9 title-custom">
-      <div class="paragraph-intro">
-        {{ content?.experienceIntro }}
+  <main class="content" role="main">
+    <section aria-labelledby="experience">
+      <h3 id="experience" class="section-title">Experience</h3>
+      <div class="cards">
+        <article *ngFor="let exp of content?.experience" class="card" aria-label="Experience item">
+          <header class="card-header"><strong>{{ exp.title }}</strong></header>
+          <div class="card-body" [innerHTML]="exp.description"></div>
+        </article>
       </div>
-      <ul>
-        <li *ngFor="let exp of content?.experience">
-          <b>{{ exp.title }}</b>
-          <div [innerHTML]="exp.description"></div>
-        </li>
-      </ul>
-    </div>
-
-    <div class="col-lg-3 title-custom">
-      <h1>
-        Education journey
-      </h1>
-    </div>
-
-    <div class="col-lg-9 title-custom">
-      <div class="paragraph-intro">
-        {{ content?.educationIntro }}
+    </section>
+    <br>
+    <br>
+    <section aria-labelledby="education">
+      <h3 id="education" class="section-title">Education</h3>
+      <div class="cards">
+        <article *ngFor="let edu of content?.education" class="card" aria-label="Education item">
+          <header class="card-header"><strong>{{ edu.title }}</strong></header>
+          <div class="card-body" [innerHTML]="edu.description"></div>
+        </article>
       </div>
-      <ul>
-        <li *ngFor="let edu of content?.education">
-          <b>{{ edu.title }}</b>
-          <div [innerHTML]="edu.description"></div>
-        </li>
-      </ul>
-    </div>
-
-  </div>
-</div>
+    </section>
+  </main>
+</section>
