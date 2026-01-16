@@ -1,10 +1,11 @@
 :root {
-  --accent: #2563eb;
+  --accent: #0b4d45;
   --muted: #6b7280;
   --bg: #ffffff;
-  --card-bg: #fbfbfd;
+  --card-bg: #f9faf8;
   --gap: 1.25rem;
   --max-width: 1100px;
+  --font-family: 'Segoe UI', 'Helvetica Neue', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 }
 
 .home-page {
@@ -15,6 +16,7 @@
   margin: 2rem auto;
   align-items: start;
   text-align: justify;
+  font-family: var(--font-family);
 }
 
 .sidebar {
@@ -30,15 +32,17 @@
   height: 160px;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid rgba(37, 99, 235, 0.08);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border: 4px solid #0b4d45;
+  box-shadow: 0 8px 24px rgba(11, 77, 69, 0.15);
   display: block;
   margin-bottom: .75rem;
 }
 
 .name {
-  font-size: 1.15rem;
+  font-size: 1.5rem;
+  font-weight: 700;
   margin: 0;
+  color: #0b4d45;
 }
 
 .role {
@@ -78,10 +82,13 @@
 }
 
 .section-title {
-  font-size: 1.1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
   margin-bottom: .6rem;
-  border-bottom: 1px solid #eef2f7;
-  padding-bottom: .4rem;
+  border-bottom: 3px solid #0b4d45;
+  padding-bottom: .8rem;
+  color: #0b4d45;
+  letter-spacing: -0.5px;
 }
 
 .cards {
@@ -92,9 +99,16 @@
 
 .card {
   background: var(--card-bg);
-  padding: 1rem;
+  padding: 1.2rem;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(12, 18, 24, 0.04);
+  box-shadow: 0 2px 8px rgba(11, 77, 69, 0.06);
+  border-left: 4px solid #0b4d45;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(11, 77, 69, 0.12);
+  transform: translateY(-2px);
 }
 
 .card-header {
@@ -104,7 +118,9 @@
 }
 
 .card-header strong {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0b4d45;
 }
 
 .card-body {
@@ -125,8 +141,8 @@
 
 .institute {
   font-weight: 600;
-  color: #333;
-  font-size: 0.9rem;
+  color: #0b4d45;
+  font-size: 0.95rem;
 }
 
 .location {

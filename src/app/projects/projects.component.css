@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  font-family: 'Segoe UI', 'Helvetica Neue', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 }
 
 .project-item {
@@ -29,11 +30,12 @@
 }
 
 .project-title {
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-size: 1.4rem;
+  font-weight: 700;
   margin: 0;
   line-height: 1.4;
   flex: 1;
+  color: #0b4d45;
 }
 
 .expand-indicator {
@@ -162,8 +164,8 @@
 /* Company title design */
 .company-name {
   margin: 0;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.6rem;
+  font-weight: 700;
   color: #0b4d45;
   flex: 1;
 }
