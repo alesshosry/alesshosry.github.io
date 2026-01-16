@@ -1,24 +1,43 @@
 <div class="page-container-custom">
     <ng-container *ngFor="let company of companies">
-        <section class="company-section">
-            <div class="company-header">
-                <h2 class="company-name">{{company.name}}</h2>
-                <span class="company-badge">{{company.projects.length}} project{{company.projects.length !== 1 ? 's' :
-                    ''}}</span>
+        <section class="company-section" [class.expanded]="isCompanyExpanded(company)">
+            <div class="company-header" (click)="toggleCompanyExpanded(company)">
+                <div class="company-header-content">
+                    <h2 class="company-name">{{company.name}}</h2>
+                    <span class="company-badge">{{company.projects.length}} project{{company.projects.length !== 1 ? 's'
+                        :
+                        ''}}</span>
+                </div>
+                <span class="company-expand-indicator">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </span>
             </div>
 
-            <div class="projects-grid">
-                <mat-card class="project-card" *ngFor="let project of company.projects">
-                    <mat-card-header>
-                        <mat-card-title>{{project.title}}</mat-card-title>
-                    </mat-card-header>
-                    <mat-card-content>
-                        <p>{{project.description | truncateWords:70}}</p>
-                    </mat-card-content>
-                    <mat-card-actions align="end">
-                        <a mat-flat-button *ngIf="project.link" href="{{project.link}}" target="_blank">View</a>
-                    </mat-card-actions>
-                </mat-card>
+            <div class="projects-container" *ngIf="isCompanyExpanded(company)">
+                <div class="project-item" *ngFor="let project of company.projects"
+                    [class.expanded]="isExpanded(project)" (click)="toggleExpanded(project)">
+                    <div class="project-header">
+                        <h3 class="project-title">{{ project.title }}</h3>
+                        <span class="expand-indicator">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description" [class.truncated]="!isExpanded(project)">{{ project.description
+                            }}</p>
+                        <div class="project-footer">
+                            <a *ngIf="project.link" [href]="project.link" target="_blank" rel="noopener noreferrer"
+                                class="project-link" (click)="$event.stopPropagation()">
+                                🔗 View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div *ngIf="company.projects.length === 0" class="no-projects">No projects to show.</div>
