@@ -95,12 +95,40 @@
 }
 
 .card-header {
-  margin-bottom: .4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-header strong {
+  font-size: 1.1rem;
 }
 
 .card-body {
   color: #374151;
   line-height: 1.45;
+}
+
+.card-title-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card-title-meta strong {
+  font-size: 1.1rem;
+}
+
+.institute {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.location {
+  color: #666;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 991px) {
@@ -124,6 +152,31 @@
   }
 }
 
+.sections-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.section-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-intro {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #555;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .sections-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* legacy helpers kept for compatibility */
 .center {
   display: flex;
@@ -137,4 +190,12 @@ ul {
 
 .paragraph-intro {
   margin-bottom: 10px;
+}
+
+.card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
 }
