@@ -1,7 +1,7 @@
 {
     "quote": "Curiosity and a positive attitude can take you places!",
     "bio": "Hello and welcome. I’m <b>Aless HOSRY</b>, a research engineer specialised in software analysis. I invite you to browse through my website to learn more about my professional journey, explore my portfolio, and connect with me on social media. Let’s connect and collaborate to create something meaningful.",
-    "educationIntro": "My academic journey in computer science spans a range of degrees, each building a solid foundation in the field and shaping my expertise:",
+    "educationIntro": "My academic path in computer science includes degrees that built a strong foundation in engineering and research. I also developed fluency in French and English, studying in French universities and conducting research entirely in English: writing papers, reviewing literature, and presenting at international conferences.",
     "education": [
         {
             "title": "PhD in Computer Science (2021 - 2024)",
@@ -34,19 +34,19 @@
             "title": "PhD Candidate (2021–2024)",
             "institute": "Inria",
             "location": "Lille, France",
-            "description": "During my PhD, I focused on academic research in software analysis. I created innovative libraries like Adonis and MoTion, developed in Pharo, and collaborated with industry to analyze large-scale projects."
+            "description": "During my PhD, I focused on researching <strong>software analysis</strong>. I learned a new programming language called <a href='https://pharo.org/' target='_blank'>Pharo</a>, because it has powerful tools for analyzing software called <a href='https://moosetechnology.org/' target='_blank'>Moose</a> (<a href='https://modularmoose.org/' target='_blank'>another link</a>), built on years of research. As a PhD student, I didn’t just do research, I also created <strong>open-source projects</strong> to support my thesis. One of my projects is <strong><a href='https://github.com/alesshosry/MoTion' target='_blank'>MoTion</a></strong>, a pattern-matching tool now used by many developers in the community as their initial searching engine. I also built <strong><a href='https://github.com/alesshosry/Adonis' target='_blank'>Adonis</a></strong>, which uses MoTion to detect what I called 'external dependencies' (like cross-language links in mixed-language software). I chose this name because my work expanded to cover polyglot software, multi-tier programs, and documentation. I also published <a href='https://scholar.google.com/citations?user=SWkBYn0AAAAJ&hl=fr&oi=ao' target='_blank'>research papers</a> and presented at different conferences."
         },
         {
-            "title": "Fullstack Engineer (2016–2021)",
+            "title": "Fullstack Developer (2016–2021)",
             "institute": "Bankers Assurance SAL",
             "location": "Sil El Fil, Lebanon",
-            "description": "I worked in industry as a software engineer, staying current with evolving practices in software architecture and development. I mastered technologies such as Angular, Oracle SQL, .NET Core, and RESTful APIs."
+            "description": "During my time in industry, I worked as a full-stack developer, staying up-to-date with evolving practices in software architecture and development. My responsibilities included building websites from scratch, updating existing ones, developing web services, creating desktop applications and manage databases. I also tested mobile applications developed by external vendors and ensured smooth communication with Bankers solutions by developing RESTful services. At that time, I gained experience with established technologies while also having the opportunity to learn and master new ones, such as Angular, .NET Core, and Bootstrap. This experience played a key role in shaping my vision and ultimately led me to pursue a path in academic research."
         },
         {
             "title": "Trainee (2015)",
             "institute": "Internal Security Forces",
             "location": "Ashrafiyeh, Lebanon",
-            "description": "This was a real first experience in my programming career. I worked with a team of 4 students "
+            "description": "This was my first real experience in programming. I worked with a team of four students under the supervision of an ISF officer. It was the first time I discovered what Java was truly capable of, my first time communicating with experts online through <a href='https://stackoverflow.com/users/5184636/aless-hosry' target='_blank'>Stack Overflow</a>, and my first time learning a new technology (Android) and how to develop Android mobile apps. This internship was a true learning experience, and by the end of it, I was able of developing three different mobile applications."
         }
     ]
 }
