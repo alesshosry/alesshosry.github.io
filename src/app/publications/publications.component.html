@@ -1,16 +1,49 @@
-<div class="page-container-custom">
-  <mat-card class="card" *ngFor="let pub of publications">
-    <mat-card-header>
-      <mat-card-title>{{pub.title}}</mat-card-title>
-      <mat-card-subtitle class="card-subtitle">
-        {{pub.conference}} - {{pub.year}}<span *ngIf="pub.place"> - {{pub.place}}</span>
-      </mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
-      <p>{{pub.description | truncateWords:50}}</p>
-    </mat-card-content>
-    <mat-card-actions align="end">
-      <a mat-flat-button href="{{pub.link}}" target="_blank">Download</a>
-    </mat-card-actions>
-  </mat-card>
-</div>
+<section class="publications-page container" aria-label="Publications">
+  <main class="publications-content" role="main">
+    <div class="publications-header">
+      <h1 class="section-title">Publications</h1>
+      <p class="section-description">Research papers, conference presentations, and technical contributions</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-year-group" *ngFor="let group of groupedPublications">
+        <div class="timeline-year-marker">
+          <div class="year-badge">{{ group.year }}</div>
+        </div>
+
+        <div class="year-publications">
+          <div class="timeline-item" *ngFor="let pub of group.publications">
+            <div class="timeline-content">
+              <div class="publication-card" [class.expanded]="isExpanded(pub)" (click)="toggleExpanded(pub)">
+                <div class="publication-header">
+                  <div class="publication-meta">
+                    <span class="publication-type" [ngClass]="'type-' + getPublicationType(pub)">
+                      {{ getPublicationTypeLabel(pub) }}
+                    </span>
+                    <span class="publication-location" *ngIf="pub.place">📍 {{ pub.place }}</span>
+                  </div>
+                  <h3 class="publication-title">{{ pub.title }}</h3>
+                  <p class="publication-conference">{{ pub.conference }}</p>
+                </div>
+
+                <div class="publication-description" *ngIf="isExpanded(pub)">
+                  <p>{{ pub.description }}</p>
+                </div>
+
+                <div class="publication-footer" *ngIf="isExpanded(pub)">
+                  <a mat-flat-button [href]="pub.link" target="_blank" rel="noopener noreferrer">
+                    🔗 View Publication
+                  </a>
+                </div>
+
+                <div class="expand-icon" [class.rotated]="isExpanded(pub)">
+                  <span>▼</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</section>
