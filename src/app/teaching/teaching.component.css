@@ -1,65 +1,208 @@
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-  }
+ .teaching-page {
+   padding: 3rem 0;
+ }
 
-.description-custom {
-  margin-top: 30px;  
-}
-.title-custom{
-  margin-top: 25px;  
-}
+ .teaching-content {
+   max-width: 900px;
+   margin: 0 auto;
+ }
 
-.bottom-paragraph-custom{
-  margin-top: 40px;
-}
- 
-.padding-text-custom { 
-  padding-left: 2%; 
-}
+ .teaching-header {
+   margin-bottom: 3rem;
+   text-align: center;
+ }
 
-img {
-  border: 1px solid #7d5d5d24;
-}
- 
-ul {
-  padding-left: 1em;
-} 
+ .teaching-header .section-title {
+   font-size: 2.5rem;
+   margin-bottom: 1.5rem;
+   color: #333;
+ }
 
-.description-bio-custom {
-  font-size: 16px;
-}
+ .quote {
+   font-size: 1.3rem;
+   font-style: italic;
+   color: #555;
+   margin: 1.5rem 0;
+   padding: 1.5rem;
+   border-left: 4px solid #0b4d45;
+   background-color: #f0f5f4;
+   border-radius: 4px;
+ }
 
-.rounded-circle {
-  width:200px;
-}
+ .teaching-header .description-bio-custom {
+   font-size: 1rem;
+   line-height: 1.6;
+   color: #555;
+   margin-bottom: 0;
+ }
 
-.paragraph-intro{
-  margin-bottom: 10px;
-}
+ .experience-columns {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 2.5rem;
+   margin-bottom: 4rem;
+ }
 
-@media (max-width: 991px) {
-  /* CSS rules for screens with a width less than 991 pixels */
-  .description-custom {
-    margin-top: 15px;  
-  }
-  .title-custom{
-    margin-top: 15px;  
-  }
-  .bottom-paragraph-custom{
-    margin-top: 20px;
-  }
-  
-  .description-bio-custom {
-    font-size: 13px;
-  }
+ .experience-section {
+   margin-bottom: 0;
+ }
 
-  .rounded-circle {
-    width:150px;
-  }
-  
-}
+ .section-subtitle {
+   font-size: 1.8rem;
+   margin-bottom: 2rem;
+   color: #333;
+   font-weight: 600;
+   border-bottom: 2px solid #0b4d45;
+   padding-bottom: 0.5rem;
+ }
 
+ .experience-card {
+   background-color: #fff;
+   border-radius: 8px;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+   padding: 2rem;
+   margin-bottom: 2rem;
+ }
 
+ .experience-header {
+   margin-bottom: 1.5rem;
+ }
 
+ .experience-role {
+   font-size: 1.3rem;
+   color: #333;
+   margin: 0 0 0.5rem 0;
+   font-weight: 600;
+ }
+
+ .experience-location {
+   color: #666;
+   margin: 0;
+   font-size: 0.95rem;
+ }
+
+ .experience-description,
+ .experience-responsibilities {
+   margin-bottom: 1.5rem;
+ }
+
+ .experience-description p,
+ .experience-responsibilities p {
+   margin: 0;
+   line-height: 1.6;
+   color: #555;
+   font-size: 0.95rem;
+ }
+
+ .responsibility-title {
+   font-size: 1rem;
+   font-weight: 600;
+   color: #333;
+   margin-bottom: 0.8rem;
+ }
+
+ .teaching-courses,
+ .supervising-projects {
+   margin-top: 2rem;
+ }
+
+ .courses-title,
+ .projects-title {
+   font-size: 1.1rem;
+   color: #333;
+   margin-bottom: 1.5rem;
+   font-weight: 600;
+ }
+
+ .courses-timeline,
+ .projects-timeline {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+ }
+
+ .course-card,
+ .project-card {
+   display: flex;
+   flex-direction: column;
+   gap: 0.8rem;
+   padding: 1.2rem;
+   background-color: #f9f9f9;
+   border-radius: 6px;
+   border-left: 3px solid #0b4d45;
+   align-items: flex-start;
+ }
+
+ .course-period,
+ .project-period {
+   font-weight: 600;
+   color: #0b4d45;
+   min-width: 130px;
+   font-size: 0.85rem;
+ }
+
+ .course-details,
+ .project-details {
+   flex: 1;
+ }
+
+ .course-name,
+ .project-name {
+   font-size: 1rem;
+   font-weight: 600;
+   color: #333;
+   margin-bottom: 0.4rem;
+ }
+
+ .course-meta,
+ .project-meta {
+
+   gap: 1rem;
+   font-size: 0.85rem;
+   color: #666;
+   flex-wrap: wrap;
+ }
+
+ .course-level,
+ .course-language,
+ .project-level,
+ .project-language {
+   display: flex;
+   align-items: center;
+   gap: 0.3rem;
+ }
+
+ @media (max-width: 768px) {
+   .teaching-header .section-title {
+     font-size: 1.8rem;
+   }
+
+   .section-subtitle {
+     font-size: 1.3rem;
+   }
+
+   .experience-columns {
+     grid-template-columns: 1fr;
+     gap: 2rem;
+   }
+
+   .experience-card {
+     padding: 1.5rem;
+   }
+
+   .course-card,
+   .project-card {
+     flex-direction: column;
+     gap: 0.8rem;
+   }
+
+   .course-period,
+   .project-period {
+     min-width: auto;
+   }
+
+   .quote {
+     font-size: 1rem;
+     padding: 1rem;
+   }
+ }
