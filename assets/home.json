@@ -1,34 +1,52 @@
 {
     "quote": "Curiosity and a positive attitude can take you places!",
     "bio": "Hello and welcome. I’m <b>Aless HOSRY</b>, a research engineer specialised in software analysis. I invite you to browse through my website to learn more about my professional journey, explore my portfolio, and connect with me on social media. Let’s connect and collaborate to create something meaningful.",
-    "educationIntro": "My academic journey in computer science spans a range of degrees, each building a solid foundation in the field and shaping my expertise in software engineering:",
+    "educationIntro": "My academic journey in computer science spans a range of degrees, each building a solid foundation in the field and shaping my expertise:",
     "education": [
         {
             "title": "PhD in Computer Science (2021 - 2024)",
-            "description": "I completed my PhD in Computer Science, specializing in External Dependencies, as part of the EVREF team at INRIA Lille. My research focused on detecting and analyzing external dependencies in heterogeneous software systems, resulting in several published papers and presentations at international conferences. This experience enhanced my technical expertise and reinforced my ability to independently tackle complex research challenges."
+            "institute": "University of Lille",
+            "location": "Lille, France",
+            "description": "I completed my PhD in Computer Science, specializing in External Dependencies, as part of the <a href='https://www.inria.fr/fr/evref' target='_blank' >EVREF</a> team at <a href='https://www.inria.fr/fr/centre-inria-de-luniversite-de-lille' target='_blank'>INRIA Lille</a>. My research focused on detecting and analyzing external dependencies in heterogeneous software systems, resulting in several published papers and presentations at international conferences. This experience enhanced my technical expertise and reinforced my ability to independently tackle complex research challenges."
         },
         {
             "title": "Engineering Degree (2017 - 2019)",
-            "description": "Building upon my bachelor's education, I pursued and obtained my Engineering degree in Computer Science from CNAM Lebanon. This advanced program deepened my knowledge in areas such as algorithms, software engineering, and database management, providing a strong technical foundation for my research career."
+            "institute": "Le CNAM",
+            "location": "Beirut, Lebanon",
+            "description": "Building on my bachelor's education, I earned my <strong>Engineering degree in Computer Science</strong>, specializing in <strong>Software Architecture</strong>, from <a href='https://www.cnam-liban.fr/cnam-liban/' target='_blank'>CNAM Lebanon</a>. This advanced program, which follows the initial program of <a href='https://www.cnam.fr/' target='_blank'>CNAM Paris</a>, deepened my expertise in multiple areas such as <strong> software architecture, database management</strong>., but also <strong>cultural knowledge</strong> and <strong>communication skills</strong> essential competencies for engineers aspiring to get higher positions. This program provided a strong technical foundation for my career, especially since it required students to work professionally while pursuing their studies. This is a core aspect of CNAM’s mission to support working professionals in advancing their education."
         },
         {
             "title": "Bachelor's Degree (2012 - 2016)",
-            "description": "I completed my Bachelor's degree in Computer Science from CNAM Lebanon. This foundational program provided me with a comprehensive understanding of core computer science concepts, setting the stage for my further studies and professional growth."
+            "institute": "Le CNAM",
+            "location": "Nahr Brahim, Lebanon",
+            "description": "I completed my Bachelor's degree in Computer Science from  <a href='https://www.cnam-liban.fr/presentation/les-centres/' target='_blank'>CNAM Nahr Brahim</a>. This foundational program provided me with a comprehensive understanding of core computer science concepts, setting the stage for my further studies and professional growth. It was a challenging yet valuable experience where I mastered the fundamentals of programming. I further enriched my studies by completing a 6 month internship at the Internal Security Forces in Beirut which helped me gain real-world experience while studying."
         }
     ],
-    "experienceIntro": "Over the years, I've had the opportunity to gain practical experience in various professional settings. From internships to full-time positions, I have worked with diverse teams, tackling real-world problems and building my skills. These experiences have sharpened my abilities and taught me the value of collaboration and adaptability:",
+    "experienceIntro": "Over the years, I’ve gained practical experience in both research and industry, working across diverse fields such as insurance, national security, education, and metaprogramming. From internships to full-time positions, I have worked with diverse teams, tackling real-world problems and building my skills:",
     "experience": [
         {
             "title": "Research Engineer (2025–Present)",
-            "description": "I currently work as a research engineer at Berger-Levrault, specializing in software analysis. My role allows me to merge academic insights with engineering practices. And no, I don't do AI!"
+            "institute": "Berger-Levrault",
+            "location": "Lyon, France",
+            "description": "I currently work as a <strong>Research Engineer</strong> at <a href='https://www.berger-levrault.com/fr/' target='_blank'>Berger-Levrault</a>, specializing in <strong>polyglot software analysis</strong>. As part of the <a href='https://www.research-bl.com/team/' target='_blank'>DRIT</a> team (Direction de la Recherche et de l'Innovation Technologique), our mission is research-focused, primarily serving Berger-Levrault’s developers. In my role, I merge <strong>academic research</strong> such as reading, authoring, and co-authoring <a href='https://www.research-bl.com/publications/' target='_blank'>research papers</a> with <strong>engineering practices</strong> which includes developing and collaborating on <a href='https://github.com/Evref-BL/' target='_blank'>open-source projects</a>."
         },
         {
             "title": "PhD Candidate (2021–2024)",
+            "institute": "Inria",
+            "location": "Lille, France",
             "description": "During my PhD, I focused on academic research in software analysis. I created innovative libraries like Adonis and MoTion, developed in Pharo, and collaborated with industry to analyze large-scale projects."
         },
         {
             "title": "Fullstack Engineer (2016–2021)",
+            "institute": "Bankers Assurance SAL",
+            "location": "Sil El Fil, Lebanon",
             "description": "I worked in industry as a software engineer, staying current with evolving practices in software architecture and development. I mastered technologies such as Angular, Oracle SQL, .NET Core, and RESTful APIs."
+        },
+        {
+            "title": "Trainee (2015)",
+            "institute": "Internal Security Forces",
+            "location": "Ashrafiyeh, Lebanon",
+            "description": "This was a real first experience in my programming career. I worked with a team of 4 students "
         }
     ]
 }
