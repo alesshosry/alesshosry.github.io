@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
-import { faTwitter, faGithub, faLinkedin, faFacebook, faResearchgate } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter, faGithub, faLinkedin, faFacebook, faResearchgate, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
+import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navigation-bar',
@@ -10,8 +11,10 @@ import { faTwitter, faGithub, faLinkedin, faFacebook, faResearchgate } from '@fo
 export class NavigationBarComponent {
   faTwitter = faTwitter;
   faLinkedin = faLinkedin;
-  faResearchgate = faResearchgate; 
+  faResearchgate = faResearchgate;
   faGithub = faGithub;
   faFacebook = faFacebook;
+  faStackOverflow = faStackOverflow;
+  faGraduationCap = faGraduationCap;
 
 }
