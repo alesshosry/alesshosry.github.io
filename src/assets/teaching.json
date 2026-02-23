@@ -49,15 +49,9 @@
                     },
                     {
                         "period": "Feb 2026 – September 2026",
-                        "subject": "Pattern matching and Model transformation over AST",
+                        "subject": "MoTion: Model transformations",
                         "level": "5th-year student",
                         "language": "Polyglot: Pharo, Java, TypeScript, C#..."
-                    },
-                    {
-                        "period": "Feb 2026 – May 2026",
-                        "subject": "Model transformation techniques",
-                        "level": "4th-year student",
-                        "language": "Literature review"
                     }
                 ]
             }

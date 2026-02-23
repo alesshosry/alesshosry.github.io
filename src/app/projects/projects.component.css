@@ -134,12 +134,20 @@
   transition: box-shadow 0.3s ease;
 }
 
+.company-description {
+  margin: 4px 0 0 0;
+  color: #666;
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.4;
+}
+
 .company-section:hover {
   box-shadow: 0 4px 12px rgba(11, 77, 69, 0.12);
 }
 
 .company-header {
-  display: flex;
+
   justify-content: space-between;
   align-items: center;
   padding: 20px;

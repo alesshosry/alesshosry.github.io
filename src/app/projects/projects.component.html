@@ -2,17 +2,20 @@
     <ng-container *ngFor="let company of companies">
         <section class="company-section" [class.expanded]="isCompanyExpanded(company)">
             <div class="company-header" (click)="toggleCompanyExpanded(company)">
-                <div class="company-header-content">
-                    <h2 class="company-name">{{company.name}}</h2>
+                <div class="company-header-content" style="display: flex; align-items: center; gap: 12px;">
+                    <h2 class="company-name" style="margin: 0;">{{company.name}}</h2>
                     <span class="company-badge">{{company.projects.length}} project{{company.projects.length !== 1 ? 's'
-                        :
-                        ''}}</span>
+                        : ''}}</span>
+                    <span class="company-expand-indicator">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </span>
                 </div>
-                <span class="company-expand-indicator">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="6 9 12 15 18 9"></polyline>
-                    </svg>
-                </span>
+                <div *ngIf="company.description" class="company-description">
+                    {{company.description}}
+                </div>
             </div>
 
             <div class="projects-container" *ngIf="isCompanyExpanded(company)">

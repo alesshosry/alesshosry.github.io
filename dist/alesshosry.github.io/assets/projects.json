@@ -37,7 +37,7 @@
     },
     {
         "name": "INRIA - Between 2021 and 2024",
-        "description": "",
+        "description": "At Inria, I was a PhD student and a member of the EVREF team. The team was divided into two sub-teams: Pharo and Moose. The Pharo team is responsible for developing and evolving the Pharo IDE and language, which is strongly driven by research (similar to Rascal). The Moose team, on the other hand, focuses on developing the Moose platform using Pharo, with the main goal of supporting software analysis. During my PhD, I contributed to resolving multiple issues in Moose through monthly sprints. These sessions brought together engineers, developers, PhD students, and supervisors to collaboratively work on issues from the Moose and Pharo GitHub repositories. The main objectives were to encourage pair programming, facilitate knowledge sharing, resolve issues, and most importantly to have fun :). In addition, I contributed to the development of two tools, Adonis and MoTion, both of which are fully integrated with Pharo and Moose.",
         "projects": [
             {
                 "title": "MoTion",
@@ -53,16 +53,36 @@
     },
     {
         "name": "Bankers Assurance SAL - Between 2016 and 2021",
-        "description": "",
+        "description": "At Bankers, I learned new technologies, contributed to existing projects, developed new tools, and tested those that had been developed. This experience was highly valuable and allowed me to obtain my engineering degree, as it fulfilled the university requirement of three years of professional experience. Unfortunately I can't share the projects here because they are private, but I will describe them as much as I can.",
         "projects": [
             {
-                "title": "Websites",
-                "description": "Complaints, Medical Insurance, Motor insurance, Quotation",
+                "title": "Insurance quotation",
+                "description": "This is a website that I designed and developed from scratch, including the database, backend, and frontend. Its main purpose is to enable company employees and brokers to generate insurance policy quotations and send them to clients based on their specific requirements.",
+                "link": ""
+            },
+            {
+                "title": "Motor Insurance",
+                "description": "I developed a website to view motor claims information uploaded from a mobile application used by experts, garage operators, clients, and claims officers.",
+                "link": ""
+            },
+            {
+                "title": "Medical Insurance",
+                "description": "I contributed to the development of a medical insurance platform used by pharmacies, hospitals, and medical clinics across multiple countries. I implemented several features and components that were successfully deployed and are running reliably in production.",
                 "link": ""
             },
             {
                 "title": "Mobile application webservices",
-                "description": "",
+                "description": "I developed multiple web services for mobile applications, including authentication APIs, to support secure data and file uploads.",
+                "link": ""
+            },
+            {
+                "title": "Desktop applications",
+                "description": "I contributed to the development of desktop applications designed to send emails to IT support for ticket management.",
+                "link": ""
+            },
+            {
+                "title": "Test mobile applications",
+                "description": "I tested multiple Android and iOS mobile applications developed by external companies and produced comprehensive documentation for each application.",
                 "link": ""
             }
         ]
