@@ -1,0 +1,28 @@
+{
+    "posts": [
+        {
+            "title": "Duck: A Customized LSP for Berger-Levrault. Because, why not ?",
+            "date": "2026-04-27",
+            "excerpt": "The Language Server Protocol (LSP) is a standard that defines how code editors communicate with language-specific servers to provide advanced development features such as autocompletion, go-to-definition, find references, and diagnostics (errors and warnings).",
+            "link": "https://www.research-bl.com/duck-a-customized-lsp-for-berger-levrault-because-why-not/"
+        },
+        {
+            "title": "Allier expérience industrielle et recherche pour des solutions réelles",
+            "date": "2025-02-13",
+            "excerpt": "En 2012, j’ai commencé mes études en informatique au CNAM, sans savoir exactement où cela me mènerait. Mon objectif initial était simplement d’obtenir une licence et d’entrer sur le marché du travail.",
+            "link": "https://www.docteurs-spi.org/post/allier-exp%C3%A9rience-industrielle-et-recherche-pour-des-solutions-r%C3%A9elles"
+        }
+    ],
+    "videos": [
+        {
+            "title": "Un back end métier pour mon IDE",
+            "date": "2025-05-12",
+            "link": "https://www.youtube.com/watch?v=o-7-3BGj1ng"
+        },
+        {
+            "title": "Interview sur le ring",
+            "date": "2026-31-03",
+            "link": "https://www.linkedin.com/posts/techjobs-softwareengineering-innobybl-ugcPost-7440428676422201345-GI7I/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACvl15MB8DFe1IB6OcuxhW60oZ3L1moF0co"
+        }
+    ]
+}
