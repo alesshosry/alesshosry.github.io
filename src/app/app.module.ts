@@ -19,6 +19,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TruncateWordsPipe } from './shared/truncate-words.pipe';
+import { PostsVideosComponent } from './posts-videos/posts-videos.component';
 
 
 
@@ -31,7 +32,8 @@ import { TruncateWordsPipe } from './shared/truncate-words.pipe';
     PublicationsComponent,
     TruncateWordsPipe,
     ProjectsComponent,
-    ContactMeComponent
+    ContactMeComponent,
+    PostsVideosComponent
   ],
   imports: [
     BrowserModule,

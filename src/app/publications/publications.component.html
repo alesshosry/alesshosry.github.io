@@ -17,7 +17,7 @@
               <div class="publication-card" [class.expanded]="isExpanded(pub)" (click)="toggleExpanded(pub)">
                 <div class="publication-header">
                   <div class="publication-meta">
-                    <span class="publication-type" [ngClass]="'type-' + getPublicationType(pub)">
+                    <span [class]="'publication-type type-' + getPublicationType(pub)">
                       {{ getPublicationTypeLabel(pub) }}
                     </span>
                     <span class="publication-location" *ngIf="pub.place">📍 {{ pub.place }}</span>

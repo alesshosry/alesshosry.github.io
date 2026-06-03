@@ -1,0 +1,125 @@
+.posts-videos-page {
+    padding: 3rem 0;
+    font-family: 'Segoe UI', 'Helvetica Neue', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+.posts-videos-content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.section-title {
+    font-size: 2.6rem;
+    margin-bottom: 0.4rem;
+    color: #0b4d45;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.section-description {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.content-section {
+    background: #f9faf8;
+    border: 1px solid #e6eeeb;
+    border-radius: 12px;
+    padding: 1.2rem;
+}
+
+.content-title {
+    color: #0b4d45;
+    margin: 0 0 1rem 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.content-card {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #dde9e5;
+    padding: 1rem;
+    margin-bottom: 0.9rem;
+    box-shadow: 0 2px 8px rgba(11, 77, 69, 0.06);
+}
+
+.content-card:last-child {
+    margin-bottom: 0;
+}
+
+.card-title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0b4d45;
+    line-height: 1.4;
+}
+
+.item-date {
+    color: #6a7772;
+    font-size: 0.82rem;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+}
+
+.card-text {
+    color: #4f5a56;
+    margin: 0 0 0.8rem 0;
+    font-size: 0.95rem;
+    line-height: 1.55;
+}
+
+.video-meta {
+    display: inline-block;
+    margin-bottom: 0.6rem;
+    background-color: #dff0e8;
+    color: #0b4d45;
+    border-radius: 999px;
+    padding: 0.2rem 0.7rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.content-link {
+    color: #0b4d45;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.content-link:hover {
+    text-decoration: underline;
+}
+
+.empty-state {
+    color: #6e7773;
+    font-size: 0.95rem;
+    padding: 1rem;
+    border: 1px dashed #c9d8d2;
+    border-radius: 8px;
+    background: #fff;
+}
+
+@media (max-width: 900px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
