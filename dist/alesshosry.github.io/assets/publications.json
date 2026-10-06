@@ -1,5 +1,14 @@
 [
   {
+    "title": "Information Retrieval and Pattern matching on model instances leveraging LLMs",
+    "conference": "International Workshop on Smalltalk Technologies (IWST)",
+    "year": "2026",
+    "place": "Plovdiv, Bulgaria",
+    "type": "workshop",
+    "description": "Querying large software systems is a recurring challenge for practitioners. Model-Driven Engineering (MDE) addresses this by producing structured representations of source code, while Large Language Models (LLMs) offer natural-language interfaces for information retrieval. This paper investigates two complementary approaches that combine both technologies in Moose, which is a software analysis platform coded in Pharo Language, enriched with Famix metamodels capable of representing software projects, able to cover several languages such as Java and TypeScript. First, we propose building knowledge graphs for GraphRAG pipelines directly from Moose/FAMIX models, replacing text-inferred graphs with structurally grounded ones. When apply with our custom benchmark on the stleary/json-java project (56 issues), Moose/FAMIX GraphRAG produces a larger graph than the text-based one (e.g., 1460 vs. 135 entities). However, our evaluation shows limited gain in retrieval tasks, despite a cheaper to compute and richer graph structure; where both variants are outperformed by the agentic mode of Github Copilot with GPT-5.4. Second, we implement Agent skills for MoTion, a Moose pattern-matching DSL, to let LLMs generate patterns from natural-language descriptions. Preliminary experiments across three agents (ChatGPT, Copilot, Mistral AI) show that all three produce syntactically valid patterns, with one minor error observed. Another experiment showed that MoTion skills are also reliable for explaining existing patterns, as well as generating improved versions and relevant examples that correctly match these patterns. Both contributions are released as open-source artifacts.",
+    "link": "https://zenodo.org/records/22662698"
+  },
+  {
     "title": "FASTTypeScript Metamodel Generation Using FAST Traits and Tree-Sitter Project",
     "conference": "International Workshop on Smalltalk Technologies (IWST)",
     "year": "2025",
