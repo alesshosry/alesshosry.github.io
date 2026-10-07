@@ -1,6 +1,12 @@
 {
     "posts": [
         {
+            "title": "So, what exactly is a MoTion skill ?",
+            "date": "2026-10-05",
+            "excerpt": "What if developers could ask AI to create a MoTion pattern instead of writing one from scratch? That’s exactly what I explore in this article from the Software Engineering Lab at BL Research | Berger-Levrault.",
+            "link": "https://www.research-bl.com/so-what-exactly-is-a-motion-skill/"
+        },
+        {
             "title": "Duck: A Customized LSP for Berger-Levrault. Because, why not ?",
             "date": "2026-04-27",
             "excerpt": "The Language Server Protocol (LSP) is a standard that defines how code editors communicate with language-specific servers to provide advanced development features such as autocompletion, go-to-definition, find references, and diagnostics (errors and warnings).",
